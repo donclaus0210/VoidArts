@@ -12,7 +12,7 @@
     <title>VoidArts</title>
 </head>
 <body>
-    <header>
+    <header id="header-normal">
         <div class="header">
             <a href="index.html"><img src="./img/logo1.svg" alt="logo"></a>
             <ul>
@@ -21,6 +21,27 @@
                 <li><a href="#orcamento">Orçamento</a></li>
             </ul>
         </div>
+    </header>
+    <header class="header-mobile">
+        <div class="header">
+            <a href="index.html"><img src="./img/logo1.svg" alt="logo"></a>
+            <div id="container" class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <ul id="tabs-hamburguer" style="display: none;">
+            <li><a onclick="myFunction(document.getElementById('container'))" href="#portfolio">Nosso Portfólio</a></li>
+            <li><a onclick="myFunction(document.getElementById('container'))" href="#contato">Contato</a></li>
+            <li><a onclick="myFunction(document.getElementById('container'))" href="#orcamento">Orçamento</a></li>
+        </ul>
+        <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+              document.getElementById('tabs-hamburguer').classList.toggle("apear")
+            }
+        </script>
     </header>
     <section id="portfolio" class="portfolio-section">
         <div class="portfolio-h1">
@@ -152,7 +173,7 @@
                 </form>
                 <script>
                     $('#formulario').on('submit', function(event) {
-                        event.preventDefault(); // prevent reload
+                        event.preventDefault();
                         
                         var formData = new FormData(this);
                         formData.append('service_id', 'gmailteste');
@@ -162,10 +183,10 @@
                         $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
                             type: 'POST',
                             data: formData,
-                            contentType: false, // auto-detection
-                            processData: false // no need to parse formData to string
+                            contentType: false,
+                            processData: false
                         }).done(function() {
-                            alert('Your mail is sent!');
+                            alert('Seu orçamento foi enviado com sucesso!!!');
                         }).fail(function(error) {
                             alert('Oops... ' + JSON.stringify(error));
                         });
