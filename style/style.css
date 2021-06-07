@@ -280,6 +280,11 @@ header .header ul li a:hover{
     color: white;
     text-decoration: none;
 }
+@media (max-width: 400px){
+    header .header img{
+        max-height: 30px;
+    }
+}
 /* ----------------PORTFÓLIO---------------- */
 
 .portfolio-section{
@@ -310,6 +315,11 @@ header .header ul li a:hover{
         font-size: 3rem !important;
     }
 }
+@media (max-width: 530px){
+    h1{
+        font-size: 2rem !important;
+    }
+}
 .portfolio-subtitle{
     display: flex;
     max-width: 1640px;
@@ -319,6 +329,14 @@ header .header ul li a:hover{
     margin-bottom: 20px;
     flex-wrap: wrap;
 }
+@media (max-width: 520px){
+    .portfolio-subtitle div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
 .portfolio-subtitle div h3{
     font-family: 'Signika';
     font-size: 25px;
@@ -366,17 +384,28 @@ header .header ul li a:hover{
     padding: 25px;
     box-shadow: -4px 6px 6px 2px rgba(0,0,0,0.4);
     gap: 25px;
-    overflow-y: scroll;
+    overflow-y:auto;
 }
 @media (max-width: 730px){
     .tela{
         grid-template-columns: 1fr 1fr;
     }
 }
+@media (max-width: 455px){
+    .tab-navigation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tela{
+        grid-template-columns: 1fr;
+    }
+}
+#thumbs-tela a img{
+    width: 100%;
+    height: 100%;
+}
 .video{
-    border-radius: 5px;
     width: 190px;
-    background-color: #1A1A1A;
     height: 110px;
     color: aliceblue;
 }
@@ -417,7 +446,30 @@ header .header ul li a:hover{
 .patrocinadores-section .patrocinador img{
     max-width: 85%;
 }
-
+#patrocinador1{
+    background-image: url("../img/patrocinadores/Patrocinador1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+#patrocinador2{
+    background-image: url("../img/patrocinadores/Patrocinador2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+#patrocinador3{
+    background-image: url("../img/patrocinadores/Patrocinador3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+#patrocinador4{
+    background-image: url("../img/patrocinadores/Patrocinador4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
 /* ----------------CONTATO---------------- */
 
 .contact-us-section{
@@ -499,6 +551,18 @@ header .header ul li a:hover{
         width: 100%;
     }
 }
+@media (max-width: 400px){
+    .contactus-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+    .contactus-data div{
+        
+        justify-items: center;
+    }
+}
 .limitador{
     display: grid;
     justify-items: center;
@@ -556,6 +620,7 @@ header .header ul li a:hover{
         margin-right: 0px;
     }
 }
+
 .formulario-orcamento form label{
     color: #DB107B;
     font-family: "Poppins";
@@ -602,6 +667,28 @@ header .header ul li a:hover{
     cursor: pointer;
     color: black;
     background-color: #009045;
+}
+@media (max-width: 500px){
+    .formulario-orcamento form{
+        max-width: 250px;
+    }
+    .formulario-orcamento form input{
+        max-width: 225px !important;
+    }
+    .formulario-orcamento form textarea{
+        min-width: 225px !important;
+        max-width: 225px !important;
+    }
+    .formulario-orcamento .form-title{
+        display: flex;
+        flex-direction: column;
+    }
+    .formulario-orcamento .form-title h2{
+        font-size: 30px;
+    }
+    .formulario-orcamento .form-title h3{
+        font-size: 30px;
+    }
 }
 .limitador2{
     width: 100%;
