@@ -559,7 +559,7 @@ header .header ul li a:hover{
         width: 100%;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
     .contactus-data{
         display: flex;
         flex-direction: column;
@@ -567,8 +567,10 @@ header .header ul li a:hover{
         gap: 25px;
     }
     .contactus-data div{
-        
         justify-items: center;
+    }
+    #logo3{
+        display: none;
     }
 }
 .limitador{
