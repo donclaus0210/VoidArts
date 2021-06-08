@@ -288,7 +288,7 @@ header .header ul li a:hover{
     color: white;
     text-decoration: none;
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
     header .header img{
         max-height: 30px;
     }
@@ -568,9 +568,6 @@ header .header ul li a:hover{
     }
     .contactus-data div{
         justify-items: center;
-    }
-    #logo3{
-        display: none;
     }
 }
 .limitador{
