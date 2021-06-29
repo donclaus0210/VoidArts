@@ -402,11 +402,11 @@ header .header ul li a:hover {
 
 .portfolio-h1 {
     height: 60vh;
-    background-image: url("../img/background/port-page-back.svg");
+    background-image: url("../img/background/teste.jpg");
     background-repeat: no-repeat;
-    background-color: #C82987;
+    background-color: #000;
     background-position: center;
-    background-size: cover;
+    background-size:contain;
     display: flex;
     justify-content: center;
     align-items: center;
