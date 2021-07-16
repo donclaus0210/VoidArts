@@ -401,12 +401,13 @@ header .header ul li a:hover {
 }
 
 .portfolio-h1 {
-    height: 60vh;
+    height: calc(137/320*100vw);
     background-image: url("../img/background/teste.jpg");
     background-repeat: no-repeat;
     background-color: #000;
     background-position: center;
     background-size:contain;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,6 +419,7 @@ header .header ul li a:hover {
     font-size: 75px;
     font-weight: 900;
     font-family: sans-serif;
+    height: 100%;
 }
 
 @media (max-width: 950px) {
