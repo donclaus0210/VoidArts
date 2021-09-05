@@ -37,13 +37,28 @@
         </ul>
     </header>
     <section class="portfolio-section">
-        <div class="portfolio-h1">
+        <div id="carro1" class="portfolio-h1 carro">
+            <button onclick="change_car('4')" id="anterior1" class="before"></button>
             <div class="portfolio-h1-links">
                 <a href="http://" target="_blank">CANAIS NO <p class="portfolio-links-youtube">&nbsp;YOUTUBE</p></a>
                 <a href="http://" target="_blank">PERFIS DO <p class="portfolio-links-instagram">&nbsp;INSTAGRAM</p></a>
             </div>
             <img src="./img/banner/banner_mobile.png" alt="">
+            <button onclick="change_car('2')" id="proximo1" class="next"></button>
         </div>
+        <div id="carro2" class="carro" style="display: none;">
+            <button onclick="change_car('1')" id="anterior2" class="before"></button>
+            <button onclick="change_car('3')" id="proximo2" class="next"></button>
+        </div>
+        <div id="carro3" class="carro" style="display: none;">
+            <button onclick="change_car('2')" id="anterior3" class="before"></button>
+            <button onclick="change_car('4')" id="proximo3" class="next"></button>
+        </div>
+        <div id="carro4" class="carro" style="display: none;">
+            <button onclick="change_car('3')" id="anterior4" class="before"></button>
+            <button onclick="change_car('1')" id="proximo4" class="next"></button>
+        </div>
+
         <div id="portfolio" class="portfolio-subtitle">
             <img src="./img/logos/logo2.svg" alt="logo">
             <div>
@@ -107,6 +122,18 @@
         </a>
         <a href="https://www.youtube.com/user/GbThroughs" target="_blank">
             <div id="patrocinador4" class="patrocinador"></div>
+        </a>
+        <a href="https://www.youtube.com/user/mateuscypri" target="_blank">
+            <div id="patrocinador5" class="patrocinador"></div>
+        </a>
+        <a href="https://www.youtube.com/c/PamSnowStage" target="_blank">
+            <div id="patrocinador6" class="patrocinador"></div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCG2z6LK8p6JRiaSX59b_2jw" target="_blank">
+            <div id="patrocinador7" class="patrocinador"></div>
+        </a>
+        <a href="https://youtube.com/c/MaluuhLive" target="_blank">
+            <div id="patrocinador8" class="patrocinador"></div>
         </a>
     </section>
     <section id="contato" class="contact-us-section">
@@ -192,4 +219,13 @@
 <script src="./javascript/scroll_suave.js" type="text/javascript"></script>
 <script src="./javascript/loading.js" type="text/javascript"></script>
 <script src="./javascript/changeImage.js" type="text/javascript"></script>
+<script>
+    function change_car(valor){
+        var x = document.getElementsByClassName("carro")
+        for (i=0; i<x.length; i++){
+            x[i].style.display = "none"
+        }
+        document.getElementById("carro"+valor).style.display = "flex"
+    }
+</script>
 </html>
