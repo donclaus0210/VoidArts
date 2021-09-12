@@ -11,6 +11,62 @@
 </head>
 
 <body>
+    <section class="youtube-channels" style="display: none;">
+        <div class="youtube-channels-container">
+            <img onclick="opencloseyoutube(1)" class="close-button" src="./img/close.svg" alt="CANAIS DO YOUTUBE PARCEIROS">
+            <h3>CANAIS DO YOUTUBE PARCEIROS</h3>
+            <div class="channels-flex">
+                <a href="https://www.youtube.com/channel/UCkW6zXEHX2X9aeQAPpi52Yw" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador1.jpg" alt="Bora Pra Prática">
+                    <p>Bora Pra Prática</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCQrcITkj6CtqsiiB8QqTf4A" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador2.jpg" alt="Cortes Bilionários">
+                    <p>Cortes Bilionários</p>
+                </a>
+                <a href="https://www.youtube.com/c/VELCORTES" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador3.jpg" alt="VELCORTES">
+                    <p>VELCORTES</p>
+                </a>
+                <a href="https://www.youtube.com/user/GbThroughs" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador4.jpg" alt="VELCROCS">
+                    <p>VELCROCS</p>
+                </a>
+                <a href="https://www.youtube.com/user/mateuscypri" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador5.jpg" alt="Cyprussss">
+                    <p>Cyprussss</p>
+                </a>
+                <a href="https://www.youtube.com/c/PamSnowStage" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador6.jpg" alt="Pamsnowstage">
+                    <p>Pamsnowstage</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UCG2z6LK8p6JRiaSX59b_2jw" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador7.jpg" alt="Edywds">
+                    <p>Edywds</p>
+                </a>
+                <a href="https://youtube.com/c/MaluuhLive" target="_blank" class="canal-do-youtube">
+                    <img src="img/patrocinadores/Patrocinador8.jpg" alt="Maluuhlive">
+                    <p>Maluuhlive</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="instagram-profiles" style="display: none;">
+        <div class="instagram-profiles-container">
+            <img onclick="opencloseinstagram(1)" class="close-button" src="./img/close.svg" alt="CANAIS DO YOUTUBE PARCEIROS">
+            <h3>PERFIS DO INSTAGRAM PARCEIROS</h3>
+            <div class="profiles-flex">
+                <a href="https://www.instagram.com/boraprapratica/" target="_blank" class="instagram-profile">
+                    <img src="img/patrocinadores/Patrocinador1.jpg" alt="Bora Pra Prática">
+                    <p>Bora Pra Prática</p>
+                </a>
+                <a href="https://www.instagram.com/cortesbilionarios/" target="_blank" class="instagram-profile">
+                    <img src="img/patrocinadores/Patrocinador2.jpg" alt="Cortes Bilionários">
+                    <p>Cortes Bilionários</p>
+                </a>
+            </div>
+        </div>
+    </section>
     <header id="header-normal">
         <div class="header">
             <a href="."><img src="./img/logos/logo1.svg" alt="logo"></a>
@@ -36,11 +92,31 @@
             <li><a class="link-nav" onclick="changeClassApear(document.getElementById('container'))" href="#orcamento">Orçamento</a></li>
         </ul>
     </header>
-    <section id="portfolio" class="portfolio-section">
-        <div class="portfolio-h1">
-            <h1></h1>
+
+    <section class="portfolio-section">
+        <div id="carro1" class="portfolio-h1 carro">
+            <button onclick="change_car('4')" id="anterior1" class="before"></button>
+            <div class="portfolio-h1-links">
+                <a onclick="opencloseyoutube(0)">CANAIS NO <p class="portfolio-links-youtube">&nbsp;YOUTUBE</p></a>
+                <a onclick="opencloseinstagram(0)">PERFIS DO <p class="portfolio-links-instagram">&nbsp;INSTAGRAM</p></a>
+            </div>
+            <img src="./img/banner/banner_mobile.png" alt="">
+            <button onclick="change_car('2')" id="proximo1" class="next"></button>
         </div>
-        <div class="portfolio-subtitle">
+        <div id="carro2" class="carro" style="display: none;">
+            <button onclick="change_car('1')" id="anterior2" class="before"></button>
+            <button onclick="change_car('3')" id="proximo2" class="next"></button>
+        </div>
+        <div id="carro3" class="carro" style="display: none;">
+            <button onclick="change_car('2')" id="anterior3" class="before"></button>
+            <button onclick="change_car('4')" id="proximo3" class="next"></button>
+        </div>
+        <div id="carro4" class="carro" style="display: none;">
+            <button onclick="change_car('3')" id="anterior4" class="before"></button>
+            <button onclick="change_car('1')" id="proximo4" class="next"></button>
+        </div>
+
+        <div id="portfolio" class="portfolio-subtitle">
             <img src="./img/logos/logo2.svg" alt="logo">
             <div>
                 <h3>NOSSOS TRABALHOS</h3>
@@ -98,16 +174,28 @@
         <a href="https://www.youtube.com/channel/UCQrcITkj6CtqsiiB8QqTf4A" target="_blank">
             <div id="patrocinador2" class="patrocinador"></div>
         </a>
-        <a href="" target="_blank">
+        <a href="https://www.youtube.com/c/VELCORTES" target="_blank">
             <div id="patrocinador3" class="patrocinador"></div>
         </a>
         <a href="https://www.youtube.com/user/GbThroughs" target="_blank">
             <div id="patrocinador4" class="patrocinador"></div>
         </a>
+        <a href="https://www.youtube.com/user/mateuscypri" target="_blank">
+            <div id="patrocinador5" class="patrocinador"></div>
+        </a>
+        <a href="https://www.youtube.com/c/PamSnowStage" target="_blank">
+            <div id="patrocinador6" class="patrocinador"></div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCG2z6LK8p6JRiaSX59b_2jw" target="_blank">
+            <div id="patrocinador7" class="patrocinador"></div>
+        </a>
+        <a href="https://youtube.com/c/MaluuhLive" target="_blank">
+            <div id="patrocinador8" class="patrocinador"></div>
+        </a>
     </section>
     <section id="contato" class="contact-us-section">
         <div class="contactus-h1">
-            <h1>CONTACT US</h1>
+            <h1></h1>
         </div>
         <div class="limitador">
             <div class="contactus-data">
@@ -188,4 +276,33 @@
 <script src="./javascript/scroll_suave.js" type="text/javascript"></script>
 <script src="./javascript/loading.js" type="text/javascript"></script>
 <script src="./javascript/changeImage.js" type="text/javascript"></script>
+<script>
+    function change_car(valor){
+        var x = document.getElementsByClassName("carro")
+        for (i=0; i<x.length; i++){
+            x[i].style.display = "none"
+        }
+        document.getElementById("carro"+valor).style.display = "flex"
+    }
+</script>
+<script>
+    function opencloseyoutube(act){
+        if (act == 0){
+            document.getElementsByClassName("youtube-channels")[0].style.display = "flex"
+        }
+        else{
+            document.getElementsByClassName("youtube-channels")[0].style.display = "none"
+        }
+    }
+</script>
+<script>
+    function opencloseinstagram(act){
+        if (act == 0){
+            document.getElementsByClassName("instagram-profiles")[0].style.display = "flex"
+        }
+        else{
+            document.getElementsByClassName("instagram-profiles")[0].style.display = "none"
+        }
+    }
+</script>
 </html>
