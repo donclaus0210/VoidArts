@@ -428,10 +428,20 @@ header .header ul li a:hover {
 }
 .channels-flex, .profiles-flex{
     display: flex;
-    overflow-y: auto;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 100%;
     gap: 50px;
+}
+@media (max-width: 1138px){
+    .channels-flex{
+        overflow-y: auto;
+    }
+}
+@media (max-width: 540px){
+    .channels-flex{
+        overflow-y: auto;
+    }
 }
 
 .channels-flex .canal-do-youtube, .profiles-flex .instagram-profile{
