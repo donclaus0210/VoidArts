@@ -11,6 +11,31 @@
 </head>
 
 <body>
+    <header id="header-normal">
+        <div class="header">
+            <a href="."><img src="./img/logos/logo1.svg" alt="logo"></a>
+            <ul>
+                <li><a class="link-nav" href="#portfolio">Nosso Portfólio</a></li>
+                <li><a class="link-nav" href="#contato">Contato</a></li>
+                <li><a class="link-nav" href="#orcamento">Orçamento</a></li>
+            </ul>
+        </div>
+    </header>
+    <header class="header-mobile">
+        <div class="header">
+            <a href="index.html"><img src="./img/logos/logo1.svg" alt="logo"></a>
+            <div id="container" class="container" onclick="changeClassApear(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <ul id="tabs-hamburguer" style="display: none;">
+            <li><a class="link-nav" onclick="changeClassApear(document.getElementById('container'))" href="#portfolio">Nosso Portfólio</a></li>
+            <li><a class="link-nav" onclick="changeClassApear(document.getElementById('container'))" href="#contato">Contato</a></li>
+            <li><a class="link-nav" onclick="changeClassApear(document.getElementById('container'))" href="#orcamento">Orçamento</a></li>
+        </ul>
+    </header>
     <section class="youtube-channels" style="display: none;">
         <div class="youtube-channels-container">
             <img onclick="opencloseyoutube(1)" class="close-button" src="./img/close.svg" alt="CANAIS DO YOUTUBE PARCEIROS">
@@ -67,32 +92,6 @@
             </div>
         </div>
     </section>
-    <header id="header-normal">
-        <div class="header">
-            <a href="."><img src="./img/logos/logo1.svg" alt="logo"></a>
-            <ul>
-                <li><a class="link-nav" href="#portfolio">Nosso Portfólio</a></li>
-                <li><a class="link-nav" href="#contato">Contato</a></li>
-                <li><a class="link-nav" href="#orcamento">Orçamento</a></li>
-            </ul>
-        </div>
-    </header>
-    <header class="header-mobile">
-        <div class="header">
-            <a href="index.html"><img src="./img/logos/logo1.svg" alt="logo"></a>
-            <div id="container" class="container" onclick="changeClassApear(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </div>
-        <ul id="tabs-hamburguer" style="display: none;">
-            <li><a class="link-nav" onclick="changeClassApear(document.getElementById('container'))" href="#portfolio">Nosso Portfólio</a></li>
-            <li><a class="link-nav" onclick="changeClassApear(document.getElementById('container'))" href="#contato">Contato</a></li>
-            <li><a class="link-nav" onclick="changeClassApear(document.getElementById('container'))" href="#orcamento">Orçamento</a></li>
-        </ul>
-    </header>
-
     <section class="portfolio-section">
         <div id="carro1" class="portfolio-h1 carro">
             <button onclick="change_car('4')" id="anterior1" class="before"></button>

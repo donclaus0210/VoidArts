@@ -281,6 +281,7 @@ header {
     background-color: #1A1A1A;
     display: flex;
     justify-content: center;
+    z-index: 9999999999;
 }
 
 .header {
@@ -697,11 +698,11 @@ header .header ul li a:hover {
 
 .tab-navigation button:hover {
     cursor: pointer;
-    color: #009045;
+    color: #32383B;
 }
 
 .tab-navigation .selected {
-    color: #009045;
+    color: #32383B;
     font-weight: bold
 }
 
@@ -1043,7 +1044,7 @@ header .header ul li a:hover {
 }
 
 .formulario-orcamento form label:nth-child(4n-1) {
-    color: #009045
+    color: #32383B
 }
 
 .formulario-orcamento form input[type=text] {
@@ -1086,7 +1087,7 @@ header .header ul li a:hover {
 .formulario-orcamento form input[type=submit]:hover {
     cursor: pointer;
     color: black;
-    background-color: #009045;
+    background-color: #32383B;
 }
 
 @media (max-width: 500px) {
@@ -1196,7 +1197,7 @@ footer {
 
 .sobre h3 {
     font-family: "Poppins";
-    color: #33383B;
+    color: #FFF;
     font-size: 25px;
     margin: 15px 0;
 }
@@ -1228,7 +1229,7 @@ footer img {
 
 .entre-em-contato h3 {
     font-family: "Poppins";
-    color: #33383B;
+    color: #FFF;
     font-size: 25px;
     margin: 15px 0;
 }
